@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <title>Dark Souls</title>
+        <link rel="stylesheet" href="miestilo.css"/>
+        <link rel="shortcut icon" href="hoguera.ico">
+        <script Language="JavaScript">
+   
+            function goback(){
+            alert("Good Bye!");
+            history.go(-1);}
+            function gettheDate() {
+            Todays = new Date();
+            TheDate = "" + (Todays.getMonth()+ 1) +" / "+ Todays.getDate() + " / " + (Todays.getYear() + 1900)
+            document.clock.thedate.value = TheDate;}
+            var timerID = null;
+            var timerRunning = false;
+            function stopclock (){
+                if(timerRunning)
+                    clearTimeout(timerID);
+                timerRunning = false;}
+            function startclock () {
+                stopclock();
+                gettheDate()
+                showtime(); }
+            function showtime () {
+                var now = new Date();
+                var hours = now.getHours();
+                var minutes = now.getMinutes();
+                var seconds = now.getSeconds()
+                var timeValue = "" + ((hours >12) ? hours -12 :hours)
+                timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+                timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+                timeValue += (hours >= 12) ? " P.M." : " A.M."
+                document.clock.face.value = timeValue;
+                timerID = setTimeout("showtime()",1000);
+                timerRunning = true;}
+            </script>
+    </head>
+    <body onLoad="startclock()" background="background.jpg" class="background">
+        <audio src="Firelink.mp3" autoplay loop></audio>
+        <div class="banner"><img src="Banerr.png" width="100%" height="50%"></div>
+        <center><div>
+            <table class="menu">
+                <tbody><tr>
+                <td style="padding: 20px;"><a href="index.html" title="Inicio"><img src="Inicio.png" decoding="async" loading="lazy" width="80" height="77" class=" ls-is-cached lazyloaded"></a>
+                </td>
+                <td style="padding: 20px;"><a href="Jugabilidad.html" title="Jugabilidad"><img  src="Jugabilidad.png" decoding="async" loading="lazy" width="80" height="80"  class=" ls-is-cached lazyloaded"></a>
+                </td>
+                <td style="padding: 20px;"><a href="Localizaciones.html" title="Localizaciones"><img  src="Localizaciones.png" decoding="async" loading="lazy" width="80" height="80" class=" ls-is-cached lazyloaded"></a>
+                </td>
+                <td style="padding: 20px;"><a href="Personajes.html" title="Personajes"><img src="Personajes.png" decoding="async" loading="lazy" width="80" height="80" ></a>
+                </td>
+                <td style="padding: 20px;"><a href="https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/" title="Compra"><img src="Compra.png" decoding="async" loading="lazy" width="80" height="80" ></a>
+                </td></tr>
+                <tr>
+                <td style="padding-right: 20px; padding-left: 20px;" ><div><a href="index.html" title="Inicio"><span style="color:white">INICIO</span></a></div>
+                </td>
+                <td style="padding-right: 20px; padding-left: 20px;"><div><a href="Jugabilidad.html" title="Jugabilidad"><span style="color:white">JUGABILIDAD</span></a></div>
+                </td>
+                <td style="padding-right: 20px; padding-left: 20px;"><div><a href="Localizaciones.html" title="Localizaciones"><span style="color:white">LOCALIZACIONES</span></a></div>
+                </td>
+                <td style="padding-right: 20px; padding-left: 20px;" ><div><a href="Personajes.html" title="Personajes"><span style="color:white">PERSONAJES</span></a></div>
+                </td>
+                <td style="padding-right: 20px; padding-left: 20px;" ><div><a href="https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/" title="Compra"><span style="color:white">COMPRA</span></a></div>
+                </td>
+                </tr>
+                </tbody></table>
+    </div>
+         </center>
+
+         <div class="content_jugabilidad">
+            <h2 class="title">Jugabilidad</h2>
+            <hr class="linea">
+            <p class="párrafo_jugabilidad1">
+              Dark souls destaca por su jugabilidad haciendolo
+                un juego lleno de acción, diversión y con esa esencia 
+                que te hace seguir jugando.
+            </p>
+           
+            <h3 class="titulo">Apartados a tratar:</h3>
+            <hr class="linea">
+            <ul class="lista">
+                <a href="#Controles"><li>Controles</li></a>
+                <a href="#Niveles"><li>Niveles</li></a>
+                <a href="#Humanidad"><li>Humanidades</li></a>
+            </ul>
+         </div>
+<br>
+         <div class="content_jugabilidad1">
+            <h2 class="title" id="Controles">Controles</h2>
+            <hr class="linea">
+            <p class="párrafo_controles">
+                Dark Souls destaca por tener unos controles muy intuitivos,
+                la mayoria de jugadores juegan con mando ya que es la forma más comoda 
+                y facil de jugar. Empezando con los gatillos derechos sirven para usar el 
+                arma situada en la mano derecha y los izquierdos para usar el arma de la izquierda,
+                aunque si el jugador usa en su mano izquieda un escudo el jugador puede desviar el ataque 
+                del enemigo tambien conocido como <em>Parry (Es el movimiento más popular en la saga y 
+                uno de los mas dificieles de realizar)</em>, este movimiento rompe la postura del enemigo
+                permitiendo efectuar un golpe critico en este.</p> <br>
+                <div class="caja_imagenes">
+                    <img class="imagen_parry" src="parry.gif">
+                    
+                    <img class="imagen_roll" src="roll.gif">
+                </div>
+                <center><img class="imagen_controles" src="Controles.png"></center>
+                
+                <p class="párrafo_controles2">Por otro lado tenemos los botones, encontramos uno para interactuar con el entorno,
+                otro para evadir los ataques conocido como <em>Roll (este puede verse afectado
+                por el peso del equipo del jugador)</em>, otro boton para usar tus consumibles como los
+                frascos de estus que te hacer recuperar salud, otro boton para equipar un arma a dos manos
+                para aumetar suu ataque y otro boton para saltar. <br>
+                Finalmente tenemos los botones de interfaz con el boton para navegar por los ajustes y por
+                el invetario y otros como los joysticks para mover tanto al personaje como a la camara y por 
+                ultimo el pad que sirve para hacer gestos en el juego.
+            </p>
+            
+         </div>
+         <br>
+
+         <div class="content_jugabilidad2">
+            <h2 class="title" id="Niveles">Niveles</h2>
+            <hr class="linea">
+            <p class="párrafo_niveles1"> Los niveles son lo más importante del juego, ya que a medida que avanzas el juego se va complicando 
+                aun más, tambien hay algunas armas que te exigen un determinado nivel para poder usarlas. <br>
+                Para subir de nivel el jugador debe de recolectar un numero determinado de almas que irá aumentando proporcionalmente
+                al nivel del jugador. Para conseguir almas el jugador debe matar enemigos o usar los coleccionables que conceden al jugador almas al usarlos.
+                <br>
+                Podemos distinguir varios los siguientes niveles:
+            </p> 
+            
+            <center><img class="imagen_niveles" src="Niveles.jpg"></center>
+            <p class="párrafo_niveles2"> Cada nivel tiene su función siento esta:
+                <ul class="lista"> 
+                <li><b>Vitalidad:</b> Aumenta la salud del jugador</li>
+                <li><b>Aprendizaje:</b> Aumenta la cantidad de hechizos que el jugador puede equiparse</li>
+                <li><b>Resistencia:</b> Aumenta la estamina del jugador al igual que el peso que el personaje puede llevar</li>
+                <li><b>Fuerza:</b> Permite usar y aumentar el daño con armas que escalen con Fuerza.</li>
+                <li><b>Destreza:</b> Permite usar y aumentar el daño con armas que escalen con Destreza</li>
+                <li><b>Resistencia:</b> Aumenta la resistencia del jugdor a estados adbersos como el sangrado o el veneno.</li>
+                <li><b>Inteligencia:</b> Permite usar al jugador hechizos y aumentar el daño realizados con estos</li>
+                <li><b>Fe:</b> Permite al jugdador usar milagros y aumentar el daño realizado con ellos</li>
+            </ul>
+            </p>
+         </div>
+
+         <div class="content_jugabilidad3">
+            <h2 class="title" id="Humanidad" >Humanidad</h2>
+                <hr class="linea">
+                <p class="párrafo_humanidad">
+                    Las humanidades son un objeto muy importante en Dark Souls ya que tienen distintos finos,
+                    el primero de todos es anular el estado de hueco y convertir al jugador en humano, esto activa el modo <em> PvP (Player versus Player)</em>,
+                    por otro lado las humanidades se pueden usar para avivar las hogueras y asi aumentar la cantidad de "curas" que el jugador
+                    puede llevar, tambien sirven como metodo alternativo para recuperar vida y finalmente sirver en algunos pactos 
+                    para conocer más sobre la trama y desbloquear atajos, hechizos y objetos unicos.
+                </p>
+            <center><div class="caja_imagenes">
+                <img class="imagen_humanidad"src="humanidad.png">
+                <img class="imagen_hoguera"src="hoguera.jpg">
+            </div></center>
+         </div>
+
+
+
+
+<div class="content_promo">
+    <center><p class="promo"> SI DESEA COMPRAR EL JUEGO PULSE AQUÍ</p></center>
+    
+    <div class="btn-promo">
+        <center><a class="btn" href="https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/">Compra el Juego</a></center>
+    </div>
+</div>
+
+    </body>
+
+    <center>
+    <section class="Reloj">
+        <h2>Óscar Castilla Mora 2 Bach A</h2>
+        <table class="tabla">
+        <tr><form name="clock" onSubmit="0">
+            <td> Hoy es: </td>
+           <td  colspan=2><input type="text" name="thedate" size=12
+                   value=""></td>
+           <td colspan=2>La hora es: <input type="text" name="face" size=12
+                   value=""></td></form>
+        </tr>
+        </table>
+    </section>
+</center>
+</html>

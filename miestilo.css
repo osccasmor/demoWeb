@@ -1,0 +1,493 @@
+*{
+    font-size: 100%;
+
+}
+
+.menu {
+    border-radius: 25px;
+    padding: 0px;
+    background-color: black;
+    width: fit-content;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    color: white;
+    width: 50%;
+    font-weight: bold;
+    padding-bottom: 10px;
+    box-shadow: rgba(108, 108, 149, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+
+
+.background {background-repeat:repeat;
+    background-position: center;
+    background-size: 100%auto;
+
+}
+
+.content header{
+    margin-left: 50px;
+    margin-right: 47%;
+    margin-top: 20px;
+
+    text-align: left;
+    background-color: black;
+    border: 2px solid white;
+}
+.Imagen1{
+    float: right;
+    max-width: 40%;
+    max-height:35%;
+    margin-right: 50px;
+    margin-top: 20px;
+    background-color: black;
+    border: 2px solid white;
+    padding: 5px;
+
+}
+
+.video{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.title{
+    color: aliceblue;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.párrafo_inicio1{
+    color: aliceblue;
+    font-family:monospace;
+    padding: 10px;
+    
+}
+.párrafo_inicio2{
+    color: aliceblue;
+    font-family:monospace;
+    padding: 10px;
+    
+}
+.párrafo_trama1{
+    color: aliceblue;
+    padding: 10px;
+}
+.párrafo_trama2{
+    color: aliceblue;
+    font-family:monospace;
+    padding: 10px;
+}
+.content_trama{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.Reloj{
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    margin: 50px;
+}
+
+.tabla {
+    color: white;
+}
+
+.content_promo{    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: black;
+    border: 2px solid white;
+
+}
+
+.promo{
+    color: aliceblue;
+    padding-top: 10px;
+}
+
+.btn-promo{
+    padding-bottom: 10px;
+   
+}
+
+.btn{
+    border: 2px solid #9c27b0;
+    color:white;
+    background: #9c27b0;
+
+}
+
+.content_jugabilidad{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.párrafo_jugabilidad1{
+    color: aliceblue;
+    font-family:monospace;
+    padding: 10px;
+}
+
+.titulo{
+    color: aliceblue;
+    font-family:monospace;
+    padding-left: 10px;
+}
+
+.lista{
+    color: aliceblue;
+    font-family:monospace;
+    padding-left: 25px;
+}
+
+.content_jugabilidad1{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.párrafo_controles{
+    color: aliceblue;
+    font-family:monospace;
+    padding: 10px;
+}
+
+.caja_imagenes{
+    display: flex;
+    justify-content: center;
+
+}
+
+.imagen_parry{
+    padding-left: 5px ;
+    padding-right:25x ;
+    width: 425px ;
+    height:300px;
+}
+
+.imagen_controles{
+    padding-top: 25px;
+    width: 750px ;
+    height: 450px;
+}
+
+.imagen_roll{
+    padding-left: 25px ;
+    padding-right:5px ;
+    width: 425px ;
+    height:300px;
+}
+
+.párrafo_controles2{
+    color: aliceblue;
+    font-family:monospace;
+    padding: 10px;
+}
+
+.content_jugabilidad2{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.párrafo_niveles1{
+    color: aliceblue;
+    font-family:monospace;
+    padding: 10px;
+}
+
+.imagen_niveles{
+    width: 750px;
+    height: 400px;
+}
+.párrafo_niveles2{
+    color: aliceblue;
+    font-family:monospace;
+    padding-left: 10px;
+}
+
+.content_jugabilidad3{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.párrafo_humanidad{
+    color: aliceblue;
+    font-family:monospace;
+    padding: 10px;
+}
+
+.imagen_humanidad{
+   padding-left: 5px ;
+    padding-right:25x ;
+    width: 425px ;
+    height:300px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.imagen_hoguera{
+    padding-left: 25px ;
+    padding-right:5px ;
+    width: 425px ;
+    height:300px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.content_localizaciones{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.párrafo_localizaciones{
+    color: aliceblue;
+    font-family:monospace;
+    padding: 10px;
+}
+
+.imagen_Lordran{
+    width: 900px;
+    padding: 10px;
+}
+
+.content_Santuario{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.párrafo_Santuario{
+    color: aliceblue;
+    font-family:monospace;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.imagen_santuario1{
+    padding-left: 5px ;
+    padding-right:25x ;
+    width: 425px ;
+    height:300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.imagen_santuario2{
+    padding-left: 20px ;
+    padding-right:5px ;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 425px ;
+    height:300px;
+}
+
+.content_Anorlondo{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.párrafo_Anorlondo{
+    color: aliceblue;
+    font-family:monospace;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.imagen_anorlondo{
+    width: 900px;
+    padding: 10px;
+}
+
+.content_abismo{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.párrafo_Abismo{
+    color: aliceblue;
+    font-family:monospace;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.párrafo_Abismo2{
+    color: aliceblue;
+    font-family:monospace;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.imagen_abismo{
+    width: 850px;
+    padding: 10px;
+}
+
+.imagen_abismo1{
+    width: 900px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.content_personajes{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.párrafo_personajes{
+    color: aliceblue;
+    font-family:monospace;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.content_Oscar{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.párrafo_Oscar{
+    color: aliceblue;
+    font-family:monospace;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.imagen_oscar1{
+    padding-left: 5px ;
+     padding-right:25x ;
+     width: 425px ;
+     height:400px;
+     padding-bottom: 10px;
+     padding-top: 10px;
+}
+
+.imagen_oscar2{
+    padding-left: 25px ;
+    padding-right:5px ;
+    width: 425px ;
+    height:400px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+.content_Solaire{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.párrafo_Solaire{
+    color: aliceblue;
+    font-family:monospace;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.imagen_solaire1{
+    padding-left: 5px ;
+     padding-right:25x ;
+     width: 400px ;
+     height:500px;
+     padding-bottom: 10px;
+     padding-top: 10px;
+}
+
+.imagen_solaire2{
+    padding-left: 25px ;
+    padding-right:5px ;
+    width: 400px ;
+    height:500px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+.content_Sieg{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    text-align: left;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.párrafo_Sieg{
+    color: aliceblue;
+    font-family:monospace;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.imagen_sieg1{
+    padding-left: 5px ;
+     padding-right:25x ;
+     width: 400px ;
+     height:500px;
+     padding-bottom: 10px;
+     padding-top: 10px;
+}
+
+.imagen_sieg2{
+    padding-left: 25px ;
+    padding-right:5px ;
+    width: 400px ;
+    height:500px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+

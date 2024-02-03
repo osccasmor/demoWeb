@@ -1,0 +1,249 @@
+<html>
+    <head>
+        <title>Dark Souls</title>
+        <link rel="stylesheet" href="miestilo.css"/>
+        <link rel="shortcut icon" href="hoguera.ico">
+        <script Language="JavaScript">
+   
+            function goback(){
+            alert("Good Bye!");
+            history.go(-1);}
+            function gettheDate() {
+            Todays = new Date();
+            TheDate = "" + (Todays.getMonth()+ 1) +" / "+ Todays.getDate() + " / " + (Todays.getYear() + 1900)
+            document.clock.thedate.value = TheDate;}
+            var timerID = null;
+            var timerRunning = false;
+            function stopclock (){
+                if(timerRunning)
+                    clearTimeout(timerID);
+                timerRunning = false;}
+            function startclock () {
+                stopclock();
+                gettheDate()
+                showtime(); }
+            function showtime () {
+                var now = new Date();
+                var hours = now.getHours();
+                var minutes = now.getMinutes();
+                var seconds = now.getSeconds()
+                var timeValue = "" + ((hours >12) ? hours -12 :hours)
+                timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+                timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+                timeValue += (hours >= 12) ? " P.M." : " A.M."
+                document.clock.face.value = timeValue;
+                timerID = setTimeout("showtime()",1000);
+                timerRunning = true;}
+            </script>
+    </head>
+    <body onLoad="startclock()" background="background.jpg" class="background">
+        <audio src="Firelink.mp3" autoplay loop></audio>
+        <div class="banner"><img src="Banerr.png" width="100%" height="50%"></div>
+        <center><div>
+            <table class="menu">
+                <tbody><tr>
+                <td style="padding: 20px;"><a href="index.html" title="Inicio"><img src="Inicio.png" decoding="async" loading="lazy" width="80" height="77" class=" ls-is-cached lazyloaded"></a>
+                </td>
+                <td style="padding: 20px;"><a href="Jugabilidad.html" title="Jugabilidad"><img  src="Jugabilidad.png" decoding="async" loading="lazy" width="80" height="80"  class=" ls-is-cached lazyloaded"></a>
+                </td>
+                <td style="padding: 20px;"><a href="Localizaciones.html" title="Localizaciones"><img  src="Localizaciones.png" decoding="async" loading="lazy" width="80" height="80" class=" ls-is-cached lazyloaded"></a>
+                </td>
+                <td style="padding: 20px;"><a href="Personajes.html" title="Personajes"><img src="Personajes.png" decoding="async" loading="lazy" width="80" height="80" ></a>
+                </td>
+                <td style="padding: 20px;"><a href="https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/" title="Compra"><img src="Compra.png" decoding="async" loading="lazy" width="80" height="80" ></a>
+                </td></tr>
+                <tr>
+                <td style="padding-right: 20px; padding-left: 20px;" ><div><a href="index.html" title="Inicio"><span style="color:white">INICIO</span></a></div>
+                </td>
+                <td style="padding-right: 20px; padding-left: 20px;"><div><a href="Jugabilidad.html" title="Jugabilidad"><span style="color:white">JUGABILIDAD</span></a></div>
+                </td>
+                <td style="padding-right: 20px; padding-left: 20px;"><div><a href="Localizaciones.html" title="Localizaciones"><span style="color:white">LOCALIZACIONES</span></a></div>
+                </td>
+                <td style="padding-right: 20px; padding-left: 20px;" ><div><a href="Personajes.html" title="Personajes"><span style="color:white">PERSONAJES</span></a></div>
+                </td>
+                <td style="padding-right: 20px; padding-left: 20px;" ><div><a href="https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/" title="Compra"><span style="color:white">COMPRA</span></a></div>
+                </td>
+                </tr>
+                </tbody></table>
+    </div>
+         </center>
+
+         <div class="content_personajes">
+            <h2 class="title">Personajes</h2>
+            <hr class="linea">
+            <p class="párrafo_personajes">
+                Los personajes en la saga Souls son un concepto muy importante ya que le da vida al juego,
+                de una forma u otra todos los personajes de Dark Souls nos transmiten sus sentimientos, sus metas
+                nos transmiten compasión y un sentimiento que acaba por completo con la soledad
+            </p>
+           
+            <h3 class="titulo">Personajes:</h3>
+            <hr class="linea">
+            <ul class="lista">
+                <a href="#Oscar"><li>Oscar de Astora</li></a>
+                <a href="#Solaire"><li>Solaire de Astora</li></a>
+                <a href="#Siegmeyer"><li>Siegmeyer de Catarina</li></a>
+            </ul>
+    
+         </div>
+
+         <div class="content_Oscar">
+            <h2 class="title" id="Oscar">Oscar de Astora</h2>
+            <hr class="linea">
+            <p class="párrafo_Oscar">
+                Oscar, Caballero de Astora es un personaje que juega un papel corto
+                pero fundamental en la trama de Dark Souls <br><br>
+                Óscar de astora el heroe sacrificado. En el reino de Astora 
+                empieza una profecia que augura que un no muerto elegido lograra 
+                poner fin a la loqura del señor Gwyn El Señor de la Ceniza y asi 
+                llegar al horno de la primera llama, para avivarla o dejarla extinguirla, 
+                por ello Oscar viaja hasta el refugio de los no muertos, para darle un 
+                empujon a esa profecia intentado hacer que se cumpliera de forma artificial, 
+                asi dando a saber que todo lo que ocuerre en el juego es fruto de la casualidad, 
+                y que el protagonista (el jugador) no era quien estaba llamado a ser el héroe
+                elegido,sino que se embolucra por accidente. Oscar aunque logra entregarle l
+                a llave de la celda donde el no muerto reside, se enfrenta al demonio del asilo, 
+                pero acaba siendo derrotado. Antes de morir, le dice al no muerto que toque 
+                la campana del despertar asi convirtiendose en hueco (encontrandonoslo como 
+                enemigo si visitamos el asilo despues de un tiempo) poniendo fin a su heroica travesia.
+            </p> <br>
+                <div class="caja_imagenes">
+                    <img class="imagen_oscar1" src="oscar2.png">
+                    <img class="imagen_oscar2" src="oscar 3.png">
+                </div>
+                <br>
+         </div>
+
+         <div class="content_Solaire">
+            <h2 class="title" id="Solaire">Solaire de Astora</h2>
+            <hr class="linea">
+            <p class="párrafo_Solaire">
+                <em>"El sol es un astro maravilloso. ¡Como un padre magnífico!
+                    ¡Cómo quisiera gozar de tanta incandescencia! <b>PRAISE THE SUN / ALABADO SEA EL SOL</b>"
+                    <br>
+                    — Solaire</em> <br><br>
+                    Al igual que el personaje creado por el jugador, Solaire es un 
+                    "no muerto" que viaja a la tierra de Lordran desde su tierra natal
+                     de Astora, aunque en una misión personal para "encontrar su propio Sol". 
+                     Su mundo y el del jugador entran en contacto en varios momentos durante el
+                      juego, y le da al jugador un elemento llamado "Saponita blanca" durante 
+                      su primer encuentro para que el jugador pueda ser convocado a otros mundos 
+                      como un fantasma y "participar en una alegre cooperación". También se ofrece 
+                      a brindar asistencia en varios jefes durante el transcurso del juego. Su 
+                      "signo de invocación" brilla en dorado en lugar de blanco, y recompensa al 
+                      jugador con "Medallas de luz solar" luego de una pelea cooperativa exitosa, 
+                      debido a su membresía en el pacto llamado "Guerreros de la luz solar". 
+                      El jugador puede unirse al pacto al cumplir con ciertos requisitos, después 
+                      de lo cual puede ser convocado por una gama más amplia de jugadores y 
+                      obtener el gesto "Praise the Sun" y el milagro "Lanza relámpago".<br><br>
+                    Solaire se describe como un guerrero habilidoso que no depende de ningún 
+                    poder especial para ganar más allá de sus milagros característicos y su 
+                    riguroso entrenamiento, ya que su equipo no presenta rasgos especiales. 
+                    Su armadura y escudo están decorados con un sol pintado a mano, que refleja 
+                    su culto al Sol y, por asociación, a Lord Gwyn. 
+                    Solaire utiliza una espada larga llamada Sunlight Straight Sword, 
+              <br><br>
+                    El jugador normalmente se encuentra por última vez con Solaire en Lost 
+                    Izalith, donde se ha vuelto loco y hostil al ponerse un gusano de luz solar,
+                     que considera su "Sol". Sin embargo, si el jugador abre un atajo y mata 
+                     al Maggot de antemano, Solaire conserva su cordura y puede ser convocado 
+                     para el jefe final
+            </p> <br>
+                <div class="caja_imagenes">
+                    <img class="imagen_solaire1" src="Solaire1.png">
+                    <img class="imagen_solaire2" src="Solaire2.png">
+                </div>
+                <br>
+         </div>
+
+         <div class="content_Sieg">
+            <h2 class="title" id="Siegmeyer">Siegmeyer de Catarina</h2>
+            <hr class="linea">
+            <p class="párrafo_Sieg">
+                <em>"¡Hrgrraaaaggh! ¡Yijaaaaaaa! ¡Vamos! ¡Por aquí, demonios! 
+                    ¡Pereced, sucias criaturas! ¡Soy Siegmeyer de Catarina y voy 
+                    a desatar mi ira!"
+                    — Siegmeyer</em> <br><br>
+                    Tambien conocido como el caballero Cebolla debido al aspecto de su armadura,
+                    Siegmeyer es un caballero de Catarina que ha llegado 
+                    a Lordran buscando aventura y emoción, aunque no está totalmente 
+                    preparado para ello junto a su hija, Sieglinde que no está de acuerdo con su 
+                    decisión.
+                    La esposa de Siegmeyer había muerto recientemente, pero al parecer 
+                    Siegmeyer se fue de aventuras y no era consciente de su muerte.
+              <br><br>
+                   Este personaje tiene una quest que seguir por la cual podremos conseguir objetos
+                   especiales y unicos. He aqui los paso a seguir:
+                   <br><br>
+                   A medida que el jugador progresa a través de la Fortaleza de Sen, 
+                   Siegmeyer tomará la oportunidad para visitar Anor Londo, donde recompensa 
+                   al jugador con el Anillo de diminuto tras acabar con los Caballeros 
+                   Plateados cercanos. Después de esto se trasladará al Santuario de Enlace 
+                   de Fuego; si el jugador le cuenta que fue el responsable de abrir las puertas 
+                   de la Fortaleza de Sen recibirá de Siegmeyer el milagro Emitir fuerza.<br><br>
+                   Se lo podrá encontrar más adelante en Ciudad Infestada, y si el jugador 
+                   le regala 3 Musgos morados, Siegmeyer lo recompensará con el Escudo perforador.<br><br>
+                   En general, Siegmeyer no necesita de la ayuda de otros; su auto-determinación 
+                   desaparece cuando el jugador lo ayuda en cada nuevo problema en la 
+                   que se encuentra. En un esfuerzo por recuperar su orgullo, Siegmeyer 
+                   ofrece ayuda al jugador en Izalith perdida al enfrentar a los Devoradores 
+                   del Caos, a costa de sacrificarse. El desenlace de su questline depende de 
+                   la decisión del jugador:<br>
+                
+                   <ul class="lista">
+                    <li>Si el jugador mata a los monstruos antes de que 
+                    Siegmeyer baje para combatirlos, éste le regalará el Anillo 
+                    placa piedra moteada en gratitud, pero su questline terminará 
+                    en ese punto.</li>
+                   <li>Si baja para enfrentar a los monstruos 
+                   y sobrevive con menos del 50% de salud recompensará 
+                   al jugador con el Anillo placa piedra moteada, pero 
+                   terminará sucumbiendo a sus heridas.</li>
+                   <li>Si baja para enfrentar a los monstruos 
+                   en el pozo y retiene más del 50% de su salud al final
+                    del encuentro, el jugador lo podrá encontrar más tarde en el 
+                    Lago de la Ceniza.</li>
+                </ul>
+                   <p class="párrafo_Sieg">Sin más orgullo y resolución, Siegmeyer no tiene nada y acaba 
+                   convirtiéndose en Hueco. Luego procede a atacar a su hija Sieglinde, 
+                   quien acaba con él finalmente. El jugador llega demasiado tarde para 
+                   salvarlo y encuentra a Sieglinde llorando sobre el cuerpo sin vida de
+                   su padre; al hablar con ella se obtiene una Losa de titanita.
+                </p> <br>
+                <div class="caja_imagenes">
+                    <img class="imagen_sieg1" src="sig1.png">
+                    <img class="imagen_sieg2" src="sig2.jpg">
+                </div>
+                <br>
+         </div>
+
+
+
+         <div class="content_promo">
+            <center><p class="promo"> SI DESEA COMPRAR EL JUEGO PULSE AQUÍ</p></center>
+            
+            <div class="btn-promo">
+                <center><a class="btn" href="https://store.steampowered.com/app/570940/DARK_SOULS_REMASTERED/">Compra el Juego</a></center>
+            </div>
+        </div>
+        
+            </body>
+        
+            <center>
+            <section class="Reloj">
+                <h2>Óscar Castilla Mora 2 Bach A</h2>
+                <table class="tabla">
+                <tr><form name="clock" onSubmit="0">
+                    <td> Hoy es: </td>
+                   <td  colspan=2><input type="text" name="thedate" size=12
+                           value=""></td>
+                   <td colspan=2>La hora es: <input type="text" name="face" size=12
+                           value=""></td></form>
+                </tr>
+                </table>
+            </section>
+        </center>
+        
+    
+
+</html>
